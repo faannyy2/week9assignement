@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanu's hot chicken</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ 
+    <header>
+        <h1>Nanu's!</h1>
+        <img src=".jpg" alt="Nanu's hot chicken Truck" id="truck-photo">
+        <p><strong>About Us:</strong> Serving the best street chicken in the city.</p>
+        <p><strong>Food Type:</strong> arabic</p>
+        <p><strong>Location:</strong> Philadelphia, PA</p>
+    </header>
+
+    <h2>Online Order Form</h2>
+
+    
+    <form action="#" method="get">
+        
+        
+        <fieldset>
+            <legend>Customer Information</legend>
+            <p>
+                <label for="custName">Customer Name:</label><br>
+                <input type="text" id="custName" name="custName">
+            </p>
+            <p>
+                <label for="email">Email Address:</label><br>
+                <input type="text" id="email" name="email">
+            </p>
+            <p>
+                <label for="phone">Phone Number:</label><br>
+                <input type="text" id="phone" name="phone">
+            </p>
+        </fieldset>
+
+      
+        <fieldset>
+            <legend>Menu (Select your items)</legend>
+            <p>
+                <input type="checkbox" id="item1" name="menu" value="Chicken sandwich">
+                <label for="item1">Chicken sandwich - Seasoned chicken with spice ($12.00)</label>
+            </p>
+            <p>
+                <input type="checkbox" id="item2" name="menu" value="Cheese fries eith chicken ">
+                <label for="item2">Cheesse fries with Chicken - Grilled  with cilantro ($14.00)</label>
+            </p>
+            <p>
+                <input type="checkbox" id="item3" name="menu" value="Chicken wraps">
+                <label for="item3">Chicken wraps ($10.50)</label>
+            </p>
+            <p>
+                <input type="checkbox" id="item4" name="menu" value="Chicken tenders meal">
+                <label for="item4">Two well seasoned tenders with fries  ($11.00)</label>
+            </p>
+            <p>
+                <input type="checkbox" id="item5" name="menu" value="shrimp wrap with fries">
+                <label for="item5">Spicy shrimps served with fries ($13.00)</label>
+            </p>
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Customize Your Order</legend>
+            
+            <p><strong>Order Size:</strong></p>
+            <input type="radio" id="regular" name="size" value="Regular" checked>
+            <label for="regular">Regular</label>
+            <input type="radio" id="large" name="size" value="Large">
+            <label for="large">Large</label>
+            
+            <p><strong>Extra Toppings:</strong></p>
+            <input type="checkbox" id="extraCheese" name="extras" value="Cheese">
+            <label for="extraCheese">Extra Cheese</label>
+            <input type="checkbox" id="sourCream" name="extras" value="Sour Cream">
+            <label for="sourCream">Sour Cream</label>
+
+            <p>
+                <label for="drink">Choose a Drink:</label><br>
+                <select id="drink" name="drink">
+                    <option value="none">No Drink</option>
+                    <option value="water">Bottled Water</option>
+                    <option value="coke">Coca-Cola</option>
+                    <option value="sprite">Sprite</option>
+                    <option value="Hisbicus">hisbicus</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="instructions">Special Instructions:</label><br>
+                <textarea id="instructions" name="instructions" rows="3"></textarea>
+            </p>
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Pickup Information</legend>
+            <p>
+                <label for="pickupDate">Preferred pickup date or time:</label><br>
+               
+                <input type="text" id="pickupDate" name="pickupDate" placeholder="e.g., Today at 5:00 PM">
+            </p>
+            <p>
+                <label for="pickupName">Pickup Name (if different):</label><br>
+                <input type="text" id="pickupName" name="pickupName">
+            </p>
+            <p>
+                <label for="pickupNotes">Additional Pickup Instructions:</label><br>
+                <input type="text" id="pickupNotes" name="pickupNotes" placeholder="e.g., I drive a white Honda">
+            </p>
+        </fieldset>
+
+    
+        <p>
+            <button type="submit" id="submitBtn">Submit Order</button>
+            <button type="reset" id="resetBtn">Reset Form</button>
+        </p>
+
+    </form>
+</body>
+</html>
