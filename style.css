@@ -1,0 +1,107 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; 
+    color: #333333;
+    margin: 20px;
+}
+
+
+header {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #005580;
+    margin-bottom: 20px;
+}
+
+#truck-photo {
+    max-width: 100%; 
+    height: auto;
+    border: 1px solid #333333;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #005580;
+    max-width: 700px;
+    margin: 0 auto;  
+}
+
+
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #999999;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+legend {
+    font-weight: bold;
+    background-color: #005580;
+    color: white;
+    padding: 5px 10px;
+}
+
+
+input[type="text"], select, textarea {
+    width: 100%; 
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;  
+}
+
+
+input[type="text"]:focus, select:focus, textarea:focus, input[type="radio"]:focus, input[type="checkbox"]:focus {
+    border-color: #005580;
+    outline: 2px solid #005580;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#submitBtn {
+    background-color: #28a745; /* Green */
+    color: white;
+    border: 1px solid #1e7e34;
+}
+
+#resetBtn {
+    background-color: #dc3545; /* Red */
+    color: white;
+    border: 1px solid #bd2130;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 10px; 
+    }
+    form {
+        padding: 15px;
+    }
+}
+
+
+@media screen and (max-width: 390px) {
+    fieldset {
+        padding: 10px; 
+    }
+   
+    button {
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+}
